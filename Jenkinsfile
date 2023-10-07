@@ -10,6 +10,12 @@ pipeline {
                 sh 'echo "Build Completed."'
             }
         }
+        stage('Upload Artifact') {
+
+            steps {
+                sh 'echo "Artifact Uploaded"'
+            }
+        }
         stage('Deploy') {
 
             steps {
